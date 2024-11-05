@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1D1D1"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo da Pizzaria -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="#DFDFDF"
+            app:srcCompat="@drawable/pizzaria_logo" />
+
+        <!-- Container Principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D1D1D1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Título do Cardápio -->
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="Cardápio de Pizzas"
+                android:textColor="#FD002E"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Pizza 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#F2F2F2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPizza1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Pizza de Frango c/ Catupiry"
+                    android:src="@drawable/pizza1"
+                    android:scaleY="0.9"
+                    android:scaleX="0.9"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/txtPizza1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza de Frango c/ Catupiry"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/precoPizza1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$ 30,00"
+                            android:textColor="#FF0049"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/qtdPizza1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            android:hint="Qtd"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Pizza 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#F2F2F2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPizza2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Pizza de Calabresa"
+                    android:src="@drawable/pizza2"
+                    android:scaleY="0.9"
+                    android:scaleX="0.9"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/txtPizza2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza de Calabresa"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/precoPizza2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$ 25,00"
+                            android:textColor="#FF0049"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/qtdPizza2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            android:hint="Qtd"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Pizza 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#F2F2F2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPizza3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Pizza de Mussarela"
+                    android:src="@drawable/pizza3"
+                    android:scaleY="0.9"
+                    android:scaleX="0.9"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/txtPizza3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza de Mussarela"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/precoPizza3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$ 28,00"
+                            android:textColor="#FF0049"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/qtdPizza3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            android:hint="Qtd"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Pizza 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#F2F2F2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPizza4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Pizza de Atum"
+                    android:src="@drawable/pizza4"
+                    android:scaleY="0.9"
+                    android:scaleX="0.9"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/txtPizza4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza de Marguerita"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/precoPizza4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$ 35,00"
+                            android:textColor="#FF0049"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/qtdPizza4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            android:hint="Qtd"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <!-- Total Price TextView -->
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Total: R$ 0,00"
+        android:textColor="#FF002E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <!-- Calculate Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCalcularTotal"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/molde"
+            android:text="Calcular Total"
+            android:textColor="#FF002E" />
+
+        <!-- Make Order Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPedido"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/molde"
+            android:text="Fazer Pedido"
+            android:textColor="#FF002E"/>
+
+        <!-- Exit Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSair"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/molde"
+            android:backgroundTint="#FF002E"
+            android:onClick="Sair"
+
+            android:text="Sair"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Order Summary TextView -->
+    <TextView
+        android:id="@+id/txtResultadoPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
